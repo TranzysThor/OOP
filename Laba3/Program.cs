@@ -3,22 +3,40 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Laba3
 {
-    class Vector
+    public class Vector
     {
-        public int NumberOfElements;
-        public int[] Array;
-        public string ErrorCode;
-
-        public Vector()
+        public int NumberOfElements
         {
-            
+            set
+            {
+                if (value < 2 || value > 10)
+                {
+                    Console.WriteLine("Input a correct size between 2 and 10");
+                }
+                else
+                {
+                    NumberOfElements = value;
+                }
+            }
+            get { return NumberOfElements; }
         }
 
-        public Vector(int size = 1)
+        public int[] Array;
+        public string ErrorCode;
+        
+        public Vector()
         {
-            NumberOfElements = size;
             Random rnd = new Random();
             for (var i = 0; i < NumberOfElements; i++)
+            {
+                Array[i] = rnd.Next(0, 100);
+            }
+        }
+
+        public Vector(int size = 10) : this()
+        {
+            Random rnd = new Random();
+            for (var i = 0; i < size; i++)
             {
                 Array[i] = rnd.Next(0, 100);
             }
