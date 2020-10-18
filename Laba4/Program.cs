@@ -1,17 +1,18 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Laba4
 {
-    class SDArray
+    public class SDArray
     {
-        SDArray(int[] arr)
+        public SDArray(int[] arr)
         {
             Arr = arr;
         }
-        public int[] Arr { get; set; }
+        public int[] Arr = new int[5];
         public static SDArray operator *(SDArray array1, SDArray array2)
         {
-            int[] tmp = {};
+            int[] tmp = new int[5];
             for (var i = 0; i < array1.Arr.Length; i++)
             {
                 tmp[i] = array1.Arr[i] * array2.Arr[i];
@@ -51,7 +52,7 @@ namespace Laba4
 
         public static bool operator ==(SDArray array1, SDArray array2)
         {
-            return array1.Arr.Equals(array2.Arr);
+            return array2 is { } && array1 is { } && array1.Arr.Equals(array2.Arr);
         }
 
         public static bool operator !=(SDArray array1, SDArray array2)
@@ -72,21 +73,6 @@ namespace Laba4
         {
             return !(array1 > array2);
         }
-    }
-    public static class StringExtension
-    {
-        public static bool CharMatch(string str, char chr)
-        {
-            foreach (var letter in str)
-            {
-                if (letter == chr)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         public class Owner
         {
             private int ID;
@@ -108,15 +94,14 @@ namespace Laba4
                 get => Organization;
                 set => Organization = value;
             }
-            Owner(int Id, string ownerName, string org)
+            public Owner(int Id, string ownerName, string org)
             {
                 id = Id;
                 name = ownerName;
                 organization = org;
             }
         }
-
-        class Date
+        public class Date
         {
             private DateTime dateTime;
             public DateTime date
@@ -124,22 +109,103 @@ namespace Laba4
                 get => dateTime;
                 set => dateTime = value;
             }
-            Date()
+            public Date()
             {
                 date = DateTime.Now;
             }
         }
+
+        static class StatiscticOperation
+        {
+            public static int Sum(SDArray array)
+            {
+                int sum = 0;
+                foreach (var item in array.Arr)
+                {
+                    sum += item;
+                }
+                return sum;
+            }
+
+            public static int MaxMinDiff(SDArray array)
+            {
+                int max = 0;
+                int min = 101;
+                foreach (var item in array.Arr)
+                {
+                    if (item > max)
+                    {
+                        max = item;
+                    }
+
+                    if (item < min)
+                    {
+                        min = item;
+                    }
+                }
+                return max - min;
+            }
+
+            public static int Count(SDArray array)
+            {
+                return array.Arr.Length;
+            }
+        }
+    }
+    public static class StringExtension
+    {
+        public static bool CharMatch(string str, char chr)
+        {
+            foreach (var letter in str)
+            {
+                if (letter == chr)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 
-    static class StatisticOperation
+    public static class ArrayExtension
     {
-        
+        public static int[] FindAll(SDArray array)
+        {
+            for(var i = 0; i < array.Arr.Length; i++)
+            {
+                if (array.Arr[i] < 0)
+                {
+                    array.Arr[i] = 0;
+                }
+            }
+            return array.Arr;
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SDArray.Owner owner = new SDArray.Owner(1, "Roman", "Gachi");
+            SDArray.Date date = new SDArray.Date();
+            Random rand = new Random();
+            int[] arr1 = new int[5];
+            int[] arr2 = new int[5];
+            for (var i = 0; i < 5; i++)
+            {
+                arr1[i] = rand.Next(-100, 100);
+                arr2[i] = rand.Next(-100, 100);
+            }
+            SDArray Array1 = new SDArray(arr1); 
+            SDArray Array2 = new SDArray(arr2);
+            Console.WriteLine(Array1 * Array2);
+            Console.WriteLine(Array1 == Array2);
+            Console.WriteLine(Array1 != Array2);
+            Console.WriteLine(Array1 > Array2);
+            Console.WriteLine(Array1 < Array2);
+            Console.WriteLine((int)Array1);
+            Console.WriteLine($"{owner.id} {owner.name} {owner.organization}");
+            Console.WriteLine($"{date.date}");
         }
     }
 }
