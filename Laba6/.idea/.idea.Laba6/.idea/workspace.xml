@@ -22,10 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aabd5b7-73d7-4951-88ba-498210a0f2fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Laba3/.idea/.idea.Laba3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba3/.idea/.idea.Laba3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laba4/.idea/.idea.Laba4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba4/.idea/.idea.Laba4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laba5/.idea/.idea.Laba5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba5/.idea/.idea.Laba5/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7aabd5b7-73d7-4951-88ba-498210a0f2fd" name="Default Changelist" comment="docs: finish Laba6">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba6/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +40,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Class1.cs" />
       </list>
     </option>
   </component>
@@ -60,6 +59,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="Laba6" type="DotNetProject" factoryName=".NET Project">
@@ -89,8 +89,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604565889040</updated>
-      <workItem from="1604565915719" duration="3058000" />
+      <workItem from="1604565915719" duration="3522000" />
+      <workItem from="1604573761794" duration="5000" />
     </task>
+    <task id="LOCAL-00001" summary="docs: finish Laba6">
+      <created>1604569858795</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604569858795</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,27 +117,38 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="docs: finish Laba6" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: finish Laba6" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="914" height="288" key="GridCell.Tab.0.bottom" timestamp="1604569504811">
+    <state width="914" height="288" key="GridCell.Tab.0.bottom" timestamp="1604569562285">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604569504811" />
-    <state width="914" height="288" key="GridCell.Tab.0.center" timestamp="1604569504811">
+    <state width="914" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604569562285" />
+    <state width="914" height="288" key="GridCell.Tab.0.center" timestamp="1604569562280">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604569504811" />
-    <state width="914" height="288" key="GridCell.Tab.0.left" timestamp="1604569504810">
+    <state width="914" height="288" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604569562280" />
+    <state width="914" height="288" key="GridCell.Tab.0.left" timestamp="1604569562279">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604569504810" />
-    <state width="914" height="288" key="GridCell.Tab.0.right" timestamp="1604569504811">
+    <state width="914" height="288" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604569562279" />
+    <state width="914" height="288" key="GridCell.Tab.0.right" timestamp="1604569562282">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604569504811" />
+    <state width="914" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604569562282" />
+    <state x="1032" y="275" key="Rider.ProjectTemplateDialog.Size" timestamp="1604569593885">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1032" y="275" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1604569593885" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1604569871896">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604569871896" />
     <state x="1103" y="240" key="search.everywhere.popup" timestamp="1604568557989">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
