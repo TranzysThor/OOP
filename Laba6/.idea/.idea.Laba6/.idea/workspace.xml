@@ -24,6 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7aabd5b7-73d7-4951-88ba-498210a0f2fd" name="Default Changelist" comment="docs: finish Laba6">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laba7/.idea/.idea.Laba7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba7/.idea/.idea.Laba7/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +41,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/Class1.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +93,7 @@
       <updated>1604565889040</updated>
       <workItem from="1604565915719" duration="3522000" />
       <workItem from="1604573761794" duration="5000" />
+      <workItem from="1604917444284" duration="2553000" />
     </task>
     <task id="LOCAL-00001" summary="docs: finish Laba6">
       <created>1604569858795</created>
@@ -105,7 +108,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -120,6 +123,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="docs: finish Laba6" />
     <option name="LAST_COMMIT_MESSAGE" value="docs: finish Laba6" />

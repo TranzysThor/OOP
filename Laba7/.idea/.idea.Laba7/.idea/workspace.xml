@@ -22,8 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b224dce6-3865-4625-ad9b-4bd3bd352bb5" name="Default Changelist" comment="">
+    <list default="true" id="b224dce6-3865-4625-ad9b-4bd3bd352bb5" name="Default Changelist" comment="docs: finish Laba7">
       <change beforePath="$PROJECT_DIR$/../Laba6/.idea/.idea.Laba6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba6/.idea/.idea.Laba6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laba6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba6/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba7/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager">
     <configuration name="Laba7" type="DotNetProject" factoryName=".NET Project">
@@ -88,14 +91,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604570000283</updated>
-      <workItem from="1604570016083" duration="6532000" />
+      <workItem from="1604570016083" duration="6860000" />
+      <workItem from="1604776192362" duration="98000" />
+      <workItem from="1604918122776" duration="2221000" />
     </task>
+    <task id="LOCAL-00001" summary="docs: finish Laba7">
+      <created>1604587499354</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604587499354</updated>
+    </task>
+    <task id="LOCAL-00002" summary="docs: finish Laba7">
+      <created>1604587629702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604587629702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -107,31 +127,42 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="docs: finish Laba7" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: finish Laba7" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="288" key="GridCell.Tab.0.bottom" timestamp="1604587421687">
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom" timestamp="1604587818375">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604587421687" />
-    <state width="1877" height="288" key="GridCell.Tab.0.center" timestamp="1604587421686">
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604587818375" />
+    <state width="1877" height="288" key="GridCell.Tab.0.center" timestamp="1604587818375">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="288" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604587421686" />
-    <state width="1877" height="288" key="GridCell.Tab.0.left" timestamp="1604587421685">
+    <state width="1877" height="288" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604587818375" />
+    <state width="1877" height="288" key="GridCell.Tab.0.left" timestamp="1604587818375">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="288" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604587421685" />
-    <state width="1877" height="288" key="GridCell.Tab.0.right" timestamp="1604587421686">
+    <state width="1877" height="288" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604587818375" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right" timestamp="1604587818375">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604587421686" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604587818375" />
     <state x="1032" y="275" key="Rider.ProjectTemplateDialog.Size" timestamp="1604570000525">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1032" y="275" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1604570000525" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1604776300156">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604776300156" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1604587636789">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1604587636789" />
   </component>
 </project>

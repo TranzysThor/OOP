@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 namespace Laba6
 {
+    struct Programma
+    {
+        public int year;
+        public string developer;
+    }
     enum Programs
     {
         Word,
@@ -143,12 +148,6 @@ namespace Laba6
             name = Name;
             version = Version;
             type = Type;
-        }
-
-        struct Programma
-        {
-            public int year;
-            public string developer;
         }
     }
 }
