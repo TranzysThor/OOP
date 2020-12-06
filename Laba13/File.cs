@@ -1,17 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.IO.Compression;
 
 namespace Laba13
 {
     public static class file
     {
-        /*
-        6. Найдите и выведите сохраненную информацию в файле xxxlogfile.txt о действиях пользователя за определенный 
-        день/ диапазон времени/по ключевому слову. Посчитайте количество записей в нем. Удалите часть информации, оставьте только записи за текущий час.
-        7. Обязательно обрабатывайте возможные ошибки. В случае с потоками необходимо использовать конструкцию using.
-        Если необходимо «построить» путь, то следует использовать методы класса Path
-         */
         public static class AMDLog
         {
             private static string path = @"D:\2_course\OOP_1sem\amdlogfile.txt";
@@ -65,7 +60,7 @@ namespace Laba13
                 DriveInfo[] drives = DriveInfo.GetDrives();
                 foreach (var drive in drives)
                 {
-                    Console.WriteLine($"{drive.Name} Free Space: {drive.TotalFreeSpace}");
+                    Console.WriteLine($"{drive.Name}'s Free Space: {drive.TotalFreeSpace}");
                 }
             }
 
@@ -86,9 +81,9 @@ namespace Laba13
                 foreach (var drive in drives)
                 {
                     Console.WriteLine($"Drive Name: {drive.Name}\n" +
-                                      $"Drive Total Size: {drive.TotalSize}"
-                                      + $"Drive Available Space: {drive.AvailableFreeSpace}"
-                                      + $"Drive Lable: {drive.VolumeLabel}");
+                                      $"Drive Total Size: {drive.TotalSize}\n"
+                                      + $"Drive Available Space: {drive.AvailableFreeSpace}\n"
+                                      + $"Drive Label: {drive.VolumeLabel}");
                 }
             }
         }
@@ -105,7 +100,7 @@ namespace Laba13
                 }
                 else
                 {
-                    Console.WriteLine($"File Not Found");
+                    Console.WriteLine("File Not Found");
                 }
             }
 
@@ -116,7 +111,7 @@ namespace Laba13
                 if (file.Exists)
                 {
                     Console.WriteLine($"File Name: {file.Name}\n"
-                                      + $"File Extension: {file.Extension}"
+                                      + $"File Extension: {file.Extension}\n"
                                       + $"File Size: {file.Length}");
                 }
                 else
@@ -131,7 +126,7 @@ namespace Laba13
                 FileInfo file = new FileInfo(filePath);
                 if (file.Exists)
                 {
-                    Console.WriteLine($"File Creation Time: {file.CreationTime}"
+                    Console.WriteLine($"File Creation Time: {file.CreationTime}\n"
                                       + $"File Change Time: {file.LastWriteTime}");
                 }
                 else
@@ -203,11 +198,7 @@ namespace Laba13
         public static class AMDFileManager
         {
             /*5. Создать класс XXXFileManager. Набор методов определите самостоятельно. С его помощью выполнить следующие действия:
-        a. Прочитать список файлов и папок заданного диска. 
-        Создать директорий XXXInspect, создать текстовый файл xxxdirinfo.txt и сохранить туда информацию. 
-        Создать копию файла и переименовать его. Удалить первоначальный файл.
-        b. Создать еще один директорий XXXFiles. Скопировать в него все файлы с заданным расширением из заданного пользователем директория. 
-        Переместить XXXFiles в XXXInspect.
+        
         c. Сделайте архив из файлов директория XXXFiles. Разархивируйте его в другой директорий.*/
             public static void CreateDirectory(string driveLabel)
             {
@@ -224,11 +215,39 @@ namespace Laba13
                         }
                     }
                 }
-                DirectoryInfo directory = new DirectoryInfo(drives[1].Name);
-                directory.CreateSubdirectory(path);
-                using (FileStream fs = File.Create(path + @"\amddirinfo.txt"))
-                {
-                }
+                Directory.CreateDirectory(path);
+               using(File.Create(path + @"\amddirinfo.txt"))
+               {}
+            }
+
+            public static void MoveDelete()
+            {
+                string path = @"D:\AMDInspect";
+                File.Move(path + @"\amddirinfo.txt", path + @"\amddirinfoRenamed.txt");
+                File.Delete(path + @"\amddirinfo.txt");
+            }
+            /*public static void CopyFiles(string userDir)
+            {
+                Copy(userDir, @"D:\AMDFiles");
+                Directory.Move(@"D:\AMDFiles", @"D:\AMDInspect\");
+            }
+            public static void Copy(string sourceDir, string targetDir)
+            {
+                foreach(var file in Directory.GetFiles(sourceDir))
+                    File.Copy(file, Path.Combine(targetDir, Path.GetFileName(file)));
+                
+                foreach(var directory in Directory.GetDirectories(sourceDir))
+                    Copy(directory, Path.Combine(targetDir, Path.GetFileName(directory)));
+            }*/
+            public static void Archive()
+            {
+                string startPath = @"D:\AMDInspect";
+                string zipPath = @"D:\AMDInspect.zip";
+                string extractPath = @"D:\2_course";
+
+                ZipFile.CreateFromDirectory(startPath, zipPath);
+
+                ZipFile.ExtractToDirectory(zipPath, extractPath);
             }
         }
     }

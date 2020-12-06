@@ -4,6 +4,7 @@ using static Laba13.file.AMDLog;
 using static Laba13.file.AMDDirInfo;
 using static Laba13.file.AMDFileInfo;
 using static Laba13.file.AMDDiskInfo;
+using static Laba13.file.AMDFileManager;
 
 namespace Laba13
 {
@@ -11,7 +12,8 @@ namespace Laba13
     {
         static void Main(string[] args)
         {
-            while (true)
+            int choice = 1;
+            while (choice != 0)
             {
                 Console.WriteLine("Choose an operation:");
                 Console.WriteLine("1. Read Log\n"
@@ -25,8 +27,11 @@ namespace Laba13
                                   + "9. Amount of Files in Directory\n"
                                   + "10. Directory Creation Time\n"
                                   + "11. Sub Directories Amount\n"
-                                  + "12. List Root Directories\n");
-                int choice = Convert.ToInt32(Console.ReadLine());
+                                  + "12. List Root Directories\n"
+                                  + "13. Create Directory\n"
+                                  + "14. Move & Delete\n"
+                                  + "15. Archive\n");
+                choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
                     case 1: 
@@ -92,6 +97,20 @@ namespace Laba13
                         string dirRoot = Console.ReadLine();
                         RootDirectoriesList(dirRoot);
                         Console.WriteLine("\n---------------------------------------------------------\n");
+                        break;
+                    case 13:
+                        Console.WriteLine("Input a Drive Label: ");
+                        string label = Console.ReadLine();
+                        CreateDirectory(label);
+                        break;
+                    case 14:
+                        MoveDelete();
+                        break;
+                    case 15: 
+                        Archive();
+                        break;
+                    default:
+                        Console.WriteLine("No such choice");
                         break;
                 }
             }

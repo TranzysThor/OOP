@@ -22,11 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92e16283-20d8-428c-8e31-41a3f3ff12bd" name="Default Changelist" comment="">
+    <list default="true" id="92e16283-20d8-428c-8e31-41a3f3ff12bd" name="Default Changelist" comment="docs: start Laba13">
       <change beforePath="$PROJECT_DIR$/../Laba10/.idea/.idea.Laba10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba10/.idea/.idea.Laba10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Laba10/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba10/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Laba11/.idea/.idea.Laba11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba11/.idea/.idea.Laba11/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Laba12/.idea/.idea.Laba12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba12/.idea/.idea.Laba12/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Laba13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Laba13/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/File.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Laba9/.idea/.idea.Laba9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laba9/.idea/.idea.Laba9/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +42,10 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Laba10/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FE10BABC-8BAE-4C80-862E-08EA68388169/2E/FileSystem.Windows.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,6 +62,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -92,14 +101,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607090647526</updated>
-      <workItem from="1607090707484" duration="11278000" />
+      <workItem from="1607090707484" duration="11323000" />
+      <workItem from="1607250201603" duration="10029000" />
     </task>
+    <task id="LOCAL-00001" summary="docs: start Laba13">
+      <created>1607110943488</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607110943488</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -111,11 +129,98 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="docs: start Laba13" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: start Laba13" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom" timestamp="1607261636099">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607261636099" />
+    <state width="1877" height="288" key="GridCell.Tab.0.center" timestamp="1607261636099">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607261636099" />
+    <state width="1877" height="288" key="GridCell.Tab.0.left" timestamp="1607261636099">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607261636099" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right" timestamp="1607261636099">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="288" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607261636099" />
+    <state width="1877" height="382" key="GridCell.Tab.1.bottom" timestamp="1607261631539">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631539" />
+    <state width="1877" height="382" key="GridCell.Tab.1.center" timestamp="1607261631539">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631539" />
+    <state width="1877" height="382" key="GridCell.Tab.1.left" timestamp="1607261631539">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631539" />
+    <state width="1877" height="382" key="GridCell.Tab.1.right" timestamp="1607261631539">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631539" />
+    <state width="1877" height="382" key="GridCell.Tab.2.bottom" timestamp="1607261631540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631540" />
+    <state width="1877" height="382" key="GridCell.Tab.2.center" timestamp="1607261631540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631540" />
+    <state width="1877" height="382" key="GridCell.Tab.2.left" timestamp="1607261631539">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631539" />
+    <state width="1877" height="382" key="GridCell.Tab.2.right" timestamp="1607261631540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631540" />
+    <state width="1877" height="382" key="GridCell.Tab.3.bottom" timestamp="1607261631540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631540" />
+    <state width="1877" height="382" key="GridCell.Tab.3.center" timestamp="1607261631540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631540" />
+    <state width="1877" height="382" key="GridCell.Tab.3.left" timestamp="1607261631540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631540" />
+    <state width="1877" height="382" key="GridCell.Tab.3.right" timestamp="1607261631540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631540" />
+    <state width="1877" height="382" key="GridCell.Tab.4.bottom" timestamp="1607261631542">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631542" />
+    <state width="1877" height="382" key="GridCell.Tab.4.center" timestamp="1607261631541">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631541" />
+    <state width="1877" height="382" key="GridCell.Tab.4.left" timestamp="1607261631541">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631541" />
+    <state width="1877" height="382" key="GridCell.Tab.4.right" timestamp="1607261631542">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="382" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607261631542" />
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2" timestamp="1607110952250">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="269" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1607110952250" />
     <state x="639" y="115" width="642" height="849" key="find.popup" timestamp="1607107806825">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
