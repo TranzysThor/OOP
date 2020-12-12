@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <HintPath>C:\Windows\WinSxS\msil_system.runtime.seri..ion.formatters.soap_b03f5f7f11d50a3a_10.0.18362.1_none_06aae574b89b959a\System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
